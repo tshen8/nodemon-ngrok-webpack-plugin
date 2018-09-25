@@ -1,0 +1,58 @@
+{
+  "name": "nodemon-ngrok-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin to start/reload Nodemon server and use ngrok to create localhost tunnel",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint --cache src",
+    "test": "jest src",
+    "build": "npm run lint && npm test && rimraf dist && babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tshen8/nodemon-ngrok-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "nodemon",
+    "ngrock"
+  ],
+  "author": "Tony Shen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tshen8/nodemon-ngrok-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/tshen8/nodemon-ngrok-webpack-plugin#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
