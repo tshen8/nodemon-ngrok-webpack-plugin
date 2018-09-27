@@ -3,6 +3,10 @@ module.exports = {
   extends: 'airbnb-base',
   plugins: ['import'],
   env: {
-    jest: true
+    jest: true,
+    node: true
+  },
+  rules: {
+    'no-console': 0
   }
 };

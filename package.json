@@ -23,9 +23,19 @@
     "url": "https://github.com/tshen8/nodemon-ngrok-webpack-plugin/issues"
   },
   "homepage": "https://github.com/tshen8/nodemon-ngrok-webpack-plugin#readme",
+  "peerDependencies": {
+    "webpack": "^4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "boxen": "^2.0.0",
+    "ngrok": "^3.0.1",
+    "nodemon": "^1.18.4"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
