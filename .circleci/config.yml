@@ -23,3 +23,6 @@ jobs:
         
       # run build
       - run: npm run build
+
+      # upload codecov
+      - run: npm run codecov
