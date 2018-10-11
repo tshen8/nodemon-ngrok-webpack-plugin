@@ -49,11 +49,6 @@ class NodemonNgrokPlugin {
             ngrok.kill();
             monitor.emit('exit');
           });
-
-          // Ensure Ctrl+C triggers exit
-          process.once('SIGINT', () => {
-            process.exit(0);
-          });
         } catch (err) {
           compilation.errors.push(err);
         }

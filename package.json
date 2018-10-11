@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --cache src",
     "test": "jest src",
-    "build": "npm run lint && npm test && rimraf dist && babel src --out-dir dist"
+    "build": "npm run lint && npm test && rimraf dist && babel src/index.js --out-dir dist"
   },
   "repository": {
     "type": "git",
