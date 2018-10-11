@@ -112,6 +112,13 @@ describe('NodemonNgrokPlugin', () => {
       expect(ngrok.kill).toHaveBeenCalled();
     });
 
+    test('process exits (with code 0) on SIGINT signal', () => {
+      expect(process.once).toHaveBeenCalledWith('SIGINT', expect.any(Function));
+      const exit = process.once.mock.calls[1][1];
+      exit();
+      expect(process.exit).toHaveBeenCalledWith(0);
+    });
+
     test('calls done', () => {
       expect(done).toHaveBeenCalled();
     });

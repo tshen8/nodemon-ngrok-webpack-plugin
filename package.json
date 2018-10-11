@@ -1,6 +1,6 @@
 {
   "name": "nodemon-ngrok-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin to start/reload Nodemon server and use ngrok to create localhost tunnel",
   "main": "dist/index.js",
   "scripts": {
